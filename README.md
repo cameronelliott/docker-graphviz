@@ -5,7 +5,7 @@ While trying to generate dependency graphs with [snakefood](https://pypi.org/pro
 
 To avoid all this, I now run `dot` commands within a container instead
 
-To run:
+To run using my Docker Repo:
 ```
-sfood /myproject | sfood-graph | docker run -i -v `pwd`:/data dot-runner dot -Tjpg -o /data/final.jpg
+sfood /myproject | sfood-graph | docker run -i -v `pwd`:/data enigma3319/graphviz-runner dot -Tjpg -o /data/final.out
 ```
