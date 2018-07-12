@@ -10,5 +10,5 @@ to JPG:
 ```
 sfood /myproject | \
 sfood-graph | \
-docker run -i -v `pwd`:/data enigma3319/graphviz-runner dot -Tjpg -o /data/final.out
+docker run -i -v `pwd`:/data enigma3319/graphviz-runner dot -Tjpg -o /data/example.jpg
 ```
